@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Nottingham Astronomy & Particle Theory</title>
+
+  <style>
+    /* =========================================================
+       EASY EDIT SECTION
+       Change these values to adjust the look of the whole site.
+       ========================================================= */
+    :root {
+      --page-background: #f7f7f4;
+      --card-background: #ffffff;
+      --main-text: #222222;
+      --muted-text: #666666;
+      --accent-colour: #12355b;
+      --accent-light: #e8eef5;
+      --border-colour: #dddddd;
+
+      --page-width: 1100px;
+      --font-main: Arial, Helvetica, sans-serif;
+      --heading-size: 2.3rem;
+      --body-size: 1rem;
+      --line-height: 1.6;
+      --border-radius: 14px;
+    }
+
+    /* =========================================================
+       GENERAL PAGE STYLING
+       You can tweak this, but most common edits are above.
+       ========================================================= */
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      font-size: var(--body-size);
+      line-height: var(--line-height);
+      color: var(--main-text);
+      background: var(--page-background);
+    }
+
+    .page {
+      max-width: var(--page-width);
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    header {
+      background: var(--card-background);
+      border-radius: var(--border-radius);
+      padding: 36px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      color: var(--accent-colour);
+      font-size: var(--heading-size);
+      line-height: 1.15;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--accent-colour);
+    }
+
+    p {
+      margin: 0 0 16px;
+    }
+
+    .intro {
+      color: var(--muted-text);
+      font-size: 1.1rem;
+    }
+
+    .button-row {
+      margin-top: 24px;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent-colour);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button.secondary {
+      background: var(--accent-light);
+      color: var(--accent-colour);
+    }
+
+    section {
+      background: var(--card-background);
+      border-radius: var(--border-radius);
+      padding: 28px;
+      margin-bottom: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+    }
+
+    .petition-text {
+      border-left: 5px solid var(--accent-colour);
+      padding-left: 18px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 18px;
+    }
+
+    .search-box {
+      min-width: 260px;
+      flex: 1;
+      padding: 12px 14px;
+      border: 1px solid var(--border-colour);
+      border-radius: 999px;
+      font-size: 1rem;
+    }
+
+    .count {
+      color: var(--muted-text);
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+    }
+
+    th,
+    td {
+      padding: 14px 12px;
+      border-bottom: 1px solid var(--border-colour);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--accent-light);
+      color: var(--accent-colour);
+      font-size: 0.95rem;
+    }
+
+    tr:hover td {
+      background: #fafafa;
+    }
+
+    .name-column {
+      width: 24%;
+      font-weight: bold;
+    }
+
+    .institution-column {
+      width: 28%;
+    }
+
+    .comment-column {
+      width: 48%;
+    }
+
+    footer {
+      color: var(--muted-text);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 760px) {
+      header,
+      section {
+        padding: 22px;
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        border-bottom: 1px solid var(--border-colour);
+        padding: 12px 0;
+      }
+
+      td {
+        border: none;
+        padding: 6px 0;
+      }
+
+      td::before {
+        display: block;
+        font-weight: bold;
+        color: var(--accent-colour);
+      }
+
+      td:nth-child(1)::before { content: "Name"; }
+      td:nth-child(2)::before { content: "Institution"; }
+      td:nth-child(3)::before { content: "Comment"; }
+
+      .name-column,
+      .institution-column,
+      .comment-column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Save Nottingham Astronomy & Particle Theory</h1>
+      <p class="intro">
+        Academics at the University of Nottingham's jobs are at risk, which threatens two of the leading groups in the UK.
+      </p>
+
+      <div class="button-row">
+        <!-- Replace the # below with your Google Form link -->
+        <a class="button" href="#">Sign the petition</a>
+        <a class="button secondary" href="#signatories">View signatories</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Petition statement</h2>
+      <div class="petition-text">
+        <!-- EDIT THIS TEXT: paste your petition statement below. -->
+        <p>
+We, the undersigned, wish to protest at the proposed cuts to Nottingham University's departments of Astronomy and Particle Physics.  This page lists academics who have signed the petition, together with their institution and optional comments.
+        </p>
+        <p>
+          Here is another paragraph.
+        </p>
+      </div>
+    </section>
+
+    <section id="signatories">
+      <div class="controls">
+        <h2>Signatories</h2>
+        <input
+          id="searchInput"
+          class="search-box"
+          type="search"
+          placeholder="Search by name, institution, or comment"
+          onkeyup="filterTable()"
+        />
+        <div class="count"><span id="visibleCount"></span> signatories shown</div>
+      </div>
+
+      <table id="signatoriesTable">
+        <thead>
+          <tr>
+            <th class="name-column">Name</th>
+            <th class="institution-column">Institution</th>
+            <th class="comment-column">Comment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- =====================================================
+               EDIT SIGNATORIES HERE
+               Copy/paste rows from your Google Form export.
+               Format:
+               <tr>
+                 <td class="name-column">Name</td>
+                 <td class="institution-column">Institution</td>
+                 <td class="comment-column">Comment</td>
+               </tr>
+               ===================================================== -->
+
+          <tr>
+            <td class="name-column">Dr Example Name</td>
+            <td class="institution-column">Example University</td>
+            <td class="comment-column">Optional comment from the signatory.</td>
+          </tr>
+
+          <tr>
+            <td class="name-column">Prof Another Example</td>
+            <td class="institution-column">Another Institution</td>
+            <td class="comment-column">Another optional comment.</td>
+          </tr>
+
+          <tr>
+            <td class="name-column">Dr Third Example</td>
+            <td class="institution-column">Department of Physics, Example College</td>
+            <td class="comment-column"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      Last updated: <!-- EDIT THIS DATE --> 13 May 2026
+    </footer>
+  </div>
+
+  <script>
+    function updateVisibleCount() {
+      const rows = document.querySelectorAll("#signatoriesTable tbody tr");
+      let visible = 0;
+
+      rows.forEach(row => {
+        if (row.style.display !== "none") {
+          visible += 1;
+        }
+      });
+
+      document.getElementById("visibleCount").textContent = visible;
+    }
+
+    function filterTable() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const rows = document.querySelectorAll("#signatoriesTable tbody tr");
+
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(filter) ? "" : "none";
+      });
+
+      updateVisibleCount();
+    }
+
+    updateVisibleCount();
+  </script>
+</body>
+</html>
